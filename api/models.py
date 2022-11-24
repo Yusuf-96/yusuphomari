@@ -27,7 +27,7 @@ class Patient(models.Model):
         ordering =['-admitDate']
 
     def __str__(self):
-        return f'{self.Patient_First_Name}'
+        return f'{self.user.first_name}'
 
 
 class Doctor(models.Model):
